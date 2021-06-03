@@ -34,3 +34,6 @@
 
 .framgia-ci-reports/
 .framgia-ci-result.temp.yml
+
+credentials.yml.enc
+database.yml
