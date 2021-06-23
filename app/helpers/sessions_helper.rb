@@ -25,6 +25,12 @@ module SessionsHelper
     current_user.present?
   end
 
+  def login?
+    return if current_user
+    flash[:danger]="You need Login"
+    redirect_to root_path
+  end
+
   def forget(user)
     user.forget
     cookies.delete(:user_id)
